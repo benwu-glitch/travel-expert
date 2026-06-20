@@ -48,7 +48,9 @@
     <script>
       window.difyChatbotConfig = {
         token: 'cNep1zcM7lIeKyGN',
-        baseUrl: 'https://udify.app'
+        baseUrl: 'https://udify.app',
+        /* 👇 關鍵核心：加上這一行，指定把聊天室渲染到上面的 div 裡面，右下角按鈕就會消失！ */
+        container: '#dify-chatbot-container' 
       }
     </script>
     <script
