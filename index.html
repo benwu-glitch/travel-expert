@@ -39,50 +39,12 @@
         <h2 class="bounce-text" id="hindtext">製作人 : 1141660 吳碩恩</h2>
     </div>
 
-    <!-- Dify 聊天室區塊 -->
-    <div class="index-box hobbies" style="min-height: 700px; position: relative; overflow: hidden;">
-        
-        <!-- 容器保留，並加上強制覆蓋的 CSS 樣式 -->
-        <div id="dify-chatbot-container" style="width: 100%; height: 700px;"></div>
-        <p class="space2"></p>
-        
-        <style>
-            /* 
-              暴力美學：直接抓取 Dify 腳本自動生成的 iframe 與按鈕，
-              取消右下角固定定位，強制它們撐滿中間的網頁區塊！
-            */
-            #dify-chatbot-bubble-button {
-                display: none !important; /* 讓右下角討人厭的藍色圓圈圓鈕徹底消失 */
-            }
-            
-            iframe[src*="udify.app"] {
-                position: absolute !important;
-                top: 0 !important;
-                left: 0 !important;
-                width: 100% !important;
-                height: 100% !important;
-                min-height: 700px !important;
-                bottom: auto !important;
-                right: auto !important;
-                border-radius: 12px !important; /* 讓聊天室邊角帶有一點圓潤感 */
-                box-shadow: none !important;
-            }
-        </style>
-    </div>
-    
-    <!-- 保持原樣的官方腳本 -->
-    <script>
-      window.difyChatbotConfig = {
-        token: 'cNep1zcM7lIeKyGN',
-        baseUrl: 'https://udify.app',
-        container: '#dify-chatbot-container'
-      }
-    </script>
-    <script
-      src="https://udify.app/embed.min.js"
-      id="cNep1zcM7lIeKyGN"
-      defer>
-    </script>  
+    <div class="index-box hobbies" style="min-height: 700px; padding: 0; overflow: hidden;">
+        <iframe
+            src="https://udify.app/chatbot/cNep1zcM7lIeKyGN?isEmbedded=true"
+            style="width: 100%; height: 700px; border: none; display: block;"
+            allow="microphone">
+        </iframe>   
         <p class="space2"></p>
     </div>
     
